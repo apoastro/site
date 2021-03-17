@@ -11,6 +11,10 @@
   outline: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -352,7 +356,7 @@ body {
   cursor: pointer;
   color: black;
   font-weight: 400;
-  margin: 5px auto;
+  margin: 10px auto;
   text-align: center;
   border-radius: 8px;
   padding: 5px 15px;
@@ -463,9 +467,6 @@ body {
   background: black;
   color: white;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
 }
 
 .social-media h2 {
@@ -475,14 +476,50 @@ body {
 }
 
 .social-media p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
-.social-media img {
-  filter: unset;
-  opacity: 0.8;
-  max-height: 40%;
+.social-media .title {
+    font-size: 1.2em;
 }
+
+.rs-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.rs-box .title {
+    margin-top: 15px;
+}
+
+
+.social-media .social-logo {
+    max-width: 80%;
+    height: 100px;
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rs-logo {
+    filter: invert(100%);
+    height: 72px;
+
+}
+
+
 
 .landing-page {
   background: white;
@@ -517,7 +554,7 @@ body {
 .next {
   cursor: pointer;
   position: absolute;
-  bottom: 80px;
+  bottom: 100px;
   left: calc(50% - 50px);
   margin: 0 auto;
   height: 25px;
@@ -544,7 +581,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
     .start {
         font-size: 1.5em;
     }
@@ -559,7 +596,6 @@ body {
 
     .cards {
         flex-direction: row;
-        margin-top: 60px;
     }
 
     .card {
@@ -605,9 +641,9 @@ body {
         z-index: 9999;
     } */
 
-    .chatbot img {
-        width: 70%;
-    }
+    /* .chatbot img {
+        width: 50%;
+    } */
 
     .chatbot .background {
         position: absolute;
